@@ -1,0 +1,885 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8000AF611C6BAC5F003B955E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8000AF5F1C6BAC5F003B955E /* Interface.storyboard */; };
+		8000AF631C6BAC5F003B955E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8000AF621C6BAC5F003B955E /* Assets.xcassets */; };
+		8000AF6A1C6BAC5F003B955E /* Byzantine Clock Apple Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8000AF691C6BAC5F003B955E /* Byzantine Clock Apple Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8000AF6F1C6BAC5F003B955E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8000AF6E1C6BAC5F003B955E /* InterfaceController.swift */; };
+		8000AF711C6BAC5F003B955E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8000AF701C6BAC5F003B955E /* ExtensionDelegate.swift */; };
+		8000AF731C6BAC5F003B955E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8000AF721C6BAC5F003B955E /* Assets.xcassets */; };
+		8000AF771C6BAC5F003B955E /* Byzantine Clock Apple Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8000AF5D1C6BAC5F003B955E /* Byzantine Clock Apple Watch.app */; };
+		8000AF801C6BAE3A003B955E /* Digital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8050BDB31C690CCC00575135 /* Digital.ttf */; };
+		8000AF851C6BC4DB003B955E /* EDSunriseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 808CA3E31C665B3D004AAC0A /* EDSunriseSet.m */; };
+		8000AF861C6BC51C003B955E /* clock737.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80E1DC391C5CC417002F5A75 /* clock737.jpg */; };
+		8000AF8C1C6BC8AF003B955E /* ClockDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8000AF8B1C6BC8AF003B955E /* ClockDrawer.swift */; };
+		8000AF8E1C6DAC86003B955E /* clock737.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80E1DC391C5CC417002F5A75 /* clock737.jpg */; };
+		8000AFD71C6E5D67003B955E /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8000AFD61C6E5D67003B955E /* WatchConnectivity.framework */; };
+		8000AFD91C6E5D7D003B955E /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8000AFD81C6E5D7D003B955E /* WatchConnectivity.framework */; };
+		8000AFDE1C6F0CF7003B955E /* ByzantineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046FB481C663707009BDD38 /* ByzantineModel.swift */; };
+		8000AFE01C6F0D4A003B955E /* LocationSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8000AFDF1C6F0D4A003B955E /* LocationSaver.swift */; };
+		802233261C66765E00326C8B /* clock737.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80E1DC391C5CC417002F5A75 /* clock737.jpg */; };
+		8046FB471C64702E009BDD38 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046FB461C64702E009BDD38 /* ClockView.swift */; };
+		8046FB491C663707009BDD38 /* ByzantineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046FB481C663707009BDD38 /* ByzantineModel.swift */; };
+		8046FB521C6653C0009BDD38 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8046FB511C6653C0009BDD38 /* NotificationCenter.framework */; };
+		8046FB551C6653C0009BDD38 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046FB541C6653C0009BDD38 /* TodayViewController.swift */; };
+		8046FB581C6653C0009BDD38 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8046FB561C6653C0009BDD38 /* MainInterface.storyboard */; };
+		8046FB5C1C6653C0009BDD38 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8046FB4F1C6653C0009BDD38 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8046FB611C665419009BDD38 /* LocationSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1DC3D1C5CEDF9002F5A75 /* LocationSaver.swift */; };
+		8046FB621C665420009BDD38 /* ByzantineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046FB481C663707009BDD38 /* ByzantineModel.swift */; };
+		8046FB631C665427009BDD38 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046FB461C64702E009BDD38 /* ClockView.swift */; };
+		8050BDB41C690CCC00575135 /* Digital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8050BDB31C690CCC00575135 /* Digital.ttf */; };
+		808CA3E41C665B3D004AAC0A /* EDSunriseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 808CA3E31C665B3D004AAC0A /* EDSunriseSet.m */; };
+		808CA3E81C665E4C004AAC0A /* EDSunriseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 808CA3E31C665B3D004AAC0A /* EDSunriseSet.m */; };
+		80C878A91C5E1011005C5369 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C878A81C5E1011005C5369 /* SearchViewController.swift */; };
+		80C878B11C6090E1005C5369 /* APTimeZones.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C878AE1C6090E1005C5369 /* APTimeZones.m */; };
+		80C878B31C6090E1005C5369 /* timezonesDB.json in Resources */ = {isa = PBXBuildFile; fileRef = 80C878B01C6090E1005C5369 /* timezonesDB.json */; };
+		80C878BB1C609D3A005C5369 /* CLLocation+APTimeZones.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C878B81C609D3A005C5369 /* CLLocation+APTimeZones.m */; };
+		80C878BC1C609D3A005C5369 /* CLPlacemark+APTimeZones.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C878BA1C609D3A005C5369 /* CLPlacemark+APTimeZones.m */; };
+		80E1DC241C5CB499002F5A75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1DC231C5CB499002F5A75 /* AppDelegate.swift */; };
+		80E1DC261C5CB499002F5A75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1DC251C5CB499002F5A75 /* ViewController.swift */; };
+		80E1DC291C5CB499002F5A75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E1DC271C5CB499002F5A75 /* Main.storyboard */; };
+		80E1DC2B1C5CB499002F5A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E1DC2A1C5CB499002F5A75 /* Assets.xcassets */; };
+		80E1DC2E1C5CB499002F5A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E1DC2C1C5CB499002F5A75 /* LaunchScreen.storyboard */; };
+		80E1DC361C5CC1EA002F5A75 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1DC351C5CC1EA002F5A75 /* LocationViewController.swift */; };
+		80E1DC381C5CC340002F5A75 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E1DC371C5CC340002F5A75 /* CoreLocation.framework */; };
+		80E1DC3A1C5CC417002F5A75 /* clock737.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80E1DC391C5CC417002F5A75 /* clock737.jpg */; };
+		80E1DC3E1C5CEDF9002F5A75 /* LocationSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1DC3D1C5CEDF9002F5A75 /* LocationSaver.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8000AF6B1C6BAC5F003B955E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80E1DC181C5CB499002F5A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8000AF681C6BAC5F003B955E;
+			remoteInfo = "Byzantine Clock Apple Watch Extension";
+		};
+		8000AF751C6BAC5F003B955E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80E1DC181C5CB499002F5A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8000AF5C1C6BAC5F003B955E;
+			remoteInfo = "Byzantine Clock Apple Watch";
+		};
+		8046FB5A1C6653C0009BDD38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80E1DC181C5CB499002F5A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8046FB4E1C6653C0009BDD38;
+			remoteInfo = TodayExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8000AF7D1C6BAC5F003B955E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8000AF6A1C6BAC5F003B955E /* Byzantine Clock Apple Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8000AF7F1C6BAC5F003B955E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8000AF771C6BAC5F003B955E /* Byzantine Clock Apple Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8046FB601C6653C0009BDD38 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8046FB5C1C6653C0009BDD38 /* TodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8000AF5D1C6BAC5F003B955E /* Byzantine Clock Apple Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Byzantine Clock Apple Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8000AF601C6BAC5F003B955E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8000AF621C6BAC5F003B955E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8000AF641C6BAC5F003B955E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8000AF691C6BAC5F003B955E /* Byzantine Clock Apple Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Byzantine Clock Apple Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8000AF6E1C6BAC5F003B955E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8000AF701C6BAC5F003B955E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8000AF721C6BAC5F003B955E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8000AF741C6BAC5F003B955E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8000AF891C6BC739003B955E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8000AF8B1C6BC8AF003B955E /* ClockDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockDrawer.swift; sourceTree = "<group>"; };
+		8000AF8D1C6BCD67003B955E /* Byzantine Clock Apple Watch Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Byzantine Clock Apple Watch Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		8000AFD61C6E5D67003B955E /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		8000AFD81C6E5D7D003B955E /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		8000AFDF1C6F0D4A003B955E /* LocationSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSaver.swift; sourceTree = "<group>"; };
+		8046FB461C64702E009BDD38 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		8046FB481C663707009BDD38 /* ByzantineModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByzantineModel.swift; sourceTree = "<group>"; };
+		8046FB4A1C665161009BDD38 /* ByzantineClock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ByzantineClock.entitlements; sourceTree = "<group>"; };
+		8046FB4F1C6653C0009BDD38 /* TodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8046FB511C6653C0009BDD38 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		8046FB541C6653C0009BDD38 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		8046FB571C6653C0009BDD38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		8046FB591C6653C0009BDD38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8046FB651C665872009BDD38 /* TodayExtension-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TodayExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		8046FB661C66589B009BDD38 /* TodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TodayExtension.entitlements; sourceTree = "<group>"; };
+		8050BDB31C690CCC00575135 /* Digital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Digital.ttf; sourceTree = "<group>"; };
+		808CA3E21C665B3D004AAC0A /* EDSunriseSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSunriseSet.h; sourceTree = "<group>"; };
+		808CA3E31C665B3D004AAC0A /* EDSunriseSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSunriseSet.m; sourceTree = "<group>"; };
+		808CA3E51C665B78004AAC0A /* ByzantineClock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ByzantineClock-Bridging-Header.h"; sourceTree = "<group>"; };
+		80C878A81C5E1011005C5369 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		80C878AD1C6090E1005C5369 /* APTimeZones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTimeZones.h; sourceTree = "<group>"; };
+		80C878AE1C6090E1005C5369 /* APTimeZones.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTimeZones.m; sourceTree = "<group>"; };
+		80C878B01C6090E1005C5369 /* timezonesDB.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timezonesDB.json; sourceTree = "<group>"; };
+		80C878B71C609D3A005C5369 /* CLLocation+APTimeZones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+APTimeZones.h"; sourceTree = "<group>"; };
+		80C878B81C609D3A005C5369 /* CLLocation+APTimeZones.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+APTimeZones.m"; sourceTree = "<group>"; };
+		80C878B91C609D3A005C5369 /* CLPlacemark+APTimeZones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLPlacemark+APTimeZones.h"; sourceTree = "<group>"; };
+		80C878BA1C609D3A005C5369 /* CLPlacemark+APTimeZones.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLPlacemark+APTimeZones.m"; sourceTree = "<group>"; };
+		80E1DC201C5CB499002F5A75 /* ByzantineClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByzantineClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E1DC231C5CB499002F5A75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80E1DC251C5CB499002F5A75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80E1DC281C5CB499002F5A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80E1DC2A1C5CB499002F5A75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80E1DC2D1C5CB499002F5A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80E1DC2F1C5CB499002F5A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E1DC351C5CC1EA002F5A75 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		80E1DC371C5CC340002F5A75 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		80E1DC391C5CC417002F5A75 /* clock737.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clock737.jpg; sourceTree = "<group>"; };
+		80E1DC3D1C5CEDF9002F5A75 /* LocationSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSaver.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8000AF661C6BAC5F003B955E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8000AFD91C6E5D7D003B955E /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8046FB4C1C6653C0009BDD38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8046FB521C6653C0009BDD38 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E1DC1D1C5CB499002F5A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8000AFD71C6E5D67003B955E /* WatchConnectivity.framework in Frameworks */,
+				80E1DC381C5CC340002F5A75 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8000AF5E1C6BAC5F003B955E /* Byzantine Clock Apple Watch */ = {
+			isa = PBXGroup;
+			children = (
+				8000AF5F1C6BAC5F003B955E /* Interface.storyboard */,
+				8000AF621C6BAC5F003B955E /* Assets.xcassets */,
+				8000AF641C6BAC5F003B955E /* Info.plist */,
+			);
+			path = "Byzantine Clock Apple Watch";
+			sourceTree = "<group>";
+		};
+		8000AF6D1C6BAC5F003B955E /* Byzantine Clock Apple Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8000AFDF1C6F0D4A003B955E /* LocationSaver.swift */,
+				8000AF6E1C6BAC5F003B955E /* InterfaceController.swift */,
+				8000AF8B1C6BC8AF003B955E /* ClockDrawer.swift */,
+				8000AF701C6BAC5F003B955E /* ExtensionDelegate.swift */,
+				8000AF721C6BAC5F003B955E /* Assets.xcassets */,
+				8000AF741C6BAC5F003B955E /* Info.plist */,
+				8000AF8D1C6BCD67003B955E /* Byzantine Clock Apple Watch Extension-Bridging-Header.h */,
+			);
+			path = "Byzantine Clock Apple Watch Extension";
+			sourceTree = "<group>";
+		};
+		8046FB501C6653C0009BDD38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8000AFD81C6E5D7D003B955E /* WatchConnectivity.framework */,
+				8000AFD61C6E5D67003B955E /* WatchConnectivity.framework */,
+				8000AF891C6BC739003B955E /* UIKit.framework */,
+				80E1DC371C5CC340002F5A75 /* CoreLocation.framework */,
+				8046FB511C6653C0009BDD38 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8046FB531C6653C0009BDD38 /* TodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8046FB541C6653C0009BDD38 /* TodayViewController.swift */,
+				8046FB561C6653C0009BDD38 /* MainInterface.storyboard */,
+				8046FB591C6653C0009BDD38 /* Info.plist */,
+				8046FB661C66589B009BDD38 /* TodayExtension.entitlements */,
+				8046FB651C665872009BDD38 /* TodayExtension-Bridging-Header.h */,
+			);
+			path = TodayExtension;
+			sourceTree = "<group>";
+		};
+		808CA3E11C665B20004AAC0A /* EDSunriseSet */ = {
+			isa = PBXGroup;
+			children = (
+				808CA3E21C665B3D004AAC0A /* EDSunriseSet.h */,
+				808CA3E31C665B3D004AAC0A /* EDSunriseSet.m */,
+			);
+			name = EDSunriseSet;
+			sourceTree = "<group>";
+		};
+		80C878AA1C60908F005C5369 /* APTimeZones */ = {
+			isa = PBXGroup;
+			children = (
+				80C878AD1C6090E1005C5369 /* APTimeZones.h */,
+				80C878AE1C6090E1005C5369 /* APTimeZones.m */,
+				80C878B01C6090E1005C5369 /* timezonesDB.json */,
+				80C878B71C609D3A005C5369 /* CLLocation+APTimeZones.h */,
+				80C878B81C609D3A005C5369 /* CLLocation+APTimeZones.m */,
+				80C878B91C609D3A005C5369 /* CLPlacemark+APTimeZones.h */,
+				80C878BA1C609D3A005C5369 /* CLPlacemark+APTimeZones.m */,
+			);
+			name = APTimeZones;
+			sourceTree = "<group>";
+		};
+		80E1DC171C5CB499002F5A75 = {
+			isa = PBXGroup;
+			children = (
+				80E1DC221C5CB499002F5A75 /* ByzantineClock */,
+				8046FB531C6653C0009BDD38 /* TodayExtension */,
+				8000AF5E1C6BAC5F003B955E /* Byzantine Clock Apple Watch */,
+				8000AF6D1C6BAC5F003B955E /* Byzantine Clock Apple Watch Extension */,
+				8046FB501C6653C0009BDD38 /* Frameworks */,
+				80E1DC211C5CB499002F5A75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80E1DC211C5CB499002F5A75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80E1DC201C5CB499002F5A75 /* ByzantineClock.app */,
+				8046FB4F1C6653C0009BDD38 /* TodayExtension.appex */,
+				8000AF5D1C6BAC5F003B955E /* Byzantine Clock Apple Watch.app */,
+				8000AF691C6BAC5F003B955E /* Byzantine Clock Apple Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80E1DC221C5CB499002F5A75 /* ByzantineClock */ = {
+			isa = PBXGroup;
+			children = (
+				80E1DC231C5CB499002F5A75 /* AppDelegate.swift */,
+				80E1DC3D1C5CEDF9002F5A75 /* LocationSaver.swift */,
+				8046FB481C663707009BDD38 /* ByzantineModel.swift */,
+				80E1DC251C5CB499002F5A75 /* ViewController.swift */,
+				80E1DC351C5CC1EA002F5A75 /* LocationViewController.swift */,
+				80C878A81C5E1011005C5369 /* SearchViewController.swift */,
+				8046FB461C64702E009BDD38 /* ClockView.swift */,
+				80E1DC271C5CB499002F5A75 /* Main.storyboard */,
+				80E1DC2A1C5CB499002F5A75 /* Assets.xcassets */,
+				80E1DC2C1C5CB499002F5A75 /* LaunchScreen.storyboard */,
+				80E1DC2F1C5CB499002F5A75 /* Info.plist */,
+				8050BDB31C690CCC00575135 /* Digital.ttf */,
+				80E1DC391C5CC417002F5A75 /* clock737.jpg */,
+				8046FB4A1C665161009BDD38 /* ByzantineClock.entitlements */,
+				808CA3E11C665B20004AAC0A /* EDSunriseSet */,
+				80C878AA1C60908F005C5369 /* APTimeZones */,
+				808CA3E51C665B78004AAC0A /* ByzantineClock-Bridging-Header.h */,
+			);
+			path = ByzantineClock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8000AF5C1C6BAC5F003B955E /* Byzantine Clock Apple Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8000AF7E1C6BAC5F003B955E /* Build configuration list for PBXNativeTarget "Byzantine Clock Apple Watch" */;
+			buildPhases = (
+				8000AF5B1C6BAC5F003B955E /* Resources */,
+				8000AF7D1C6BAC5F003B955E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8000AF6C1C6BAC5F003B955E /* PBXTargetDependency */,
+			);
+			name = "Byzantine Clock Apple Watch";
+			productName = "Byzantine Clock Apple Watch";
+			productReference = 8000AF5D1C6BAC5F003B955E /* Byzantine Clock Apple Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8000AF681C6BAC5F003B955E /* Byzantine Clock Apple Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8000AF7C1C6BAC5F003B955E /* Build configuration list for PBXNativeTarget "Byzantine Clock Apple Watch Extension" */;
+			buildPhases = (
+				8000AF651C6BAC5F003B955E /* Sources */,
+				8000AF661C6BAC5F003B955E /* Frameworks */,
+				8000AF671C6BAC5F003B955E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Byzantine Clock Apple Watch Extension";
+			productName = "Byzantine Clock Apple Watch Extension";
+			productReference = 8000AF691C6BAC5F003B955E /* Byzantine Clock Apple Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		8046FB4E1C6653C0009BDD38 /* TodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8046FB5D1C6653C0009BDD38 /* Build configuration list for PBXNativeTarget "TodayExtension" */;
+			buildPhases = (
+				8046FB4B1C6653C0009BDD38 /* Sources */,
+				8046FB4C1C6653C0009BDD38 /* Frameworks */,
+				8046FB4D1C6653C0009BDD38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayExtension;
+			productName = TodayExtension;
+			productReference = 8046FB4F1C6653C0009BDD38 /* TodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		80E1DC1F1C5CB499002F5A75 /* ByzantineClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80E1DC321C5CB499002F5A75 /* Build configuration list for PBXNativeTarget "ByzantineClock" */;
+			buildPhases = (
+				80E1DC1C1C5CB499002F5A75 /* Sources */,
+				80E1DC1D1C5CB499002F5A75 /* Frameworks */,
+				80E1DC1E1C5CB499002F5A75 /* Resources */,
+				8046FB601C6653C0009BDD38 /* Embed App Extensions */,
+				8000AF7F1C6BAC5F003B955E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8046FB5B1C6653C0009BDD38 /* PBXTargetDependency */,
+				8000AF761C6BAC5F003B955E /* PBXTargetDependency */,
+			);
+			name = ByzantineClock;
+			productName = ByzantineClock;
+			productReference = 80E1DC201C5CB499002F5A75 /* ByzantineClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80E1DC181C5CB499002F5A75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Олег Третьяков";
+				TargetAttributes = {
+					8000AF5C1C6BAC5F003B955E = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 2GN2W6E8YC;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					8000AF681C6BAC5F003B955E = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 2GN2W6E8YC;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					8046FB4E1C6653C0009BDD38 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 2GN2W6E8YC;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					80E1DC1F1C5CB499002F5A75 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2GN2W6E8YC;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 80E1DC1B1C5CB499002F5A75 /* Build configuration list for PBXProject "ByzantineClock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80E1DC171C5CB499002F5A75;
+			productRefGroup = 80E1DC211C5CB499002F5A75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80E1DC1F1C5CB499002F5A75 /* ByzantineClock */,
+				8046FB4E1C6653C0009BDD38 /* TodayExtension */,
+				8000AF5C1C6BAC5F003B955E /* Byzantine Clock Apple Watch */,
+				8000AF681C6BAC5F003B955E /* Byzantine Clock Apple Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8000AF5B1C6BAC5F003B955E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8000AF8E1C6DAC86003B955E /* clock737.jpg in Resources */,
+				8000AF631C6BAC5F003B955E /* Assets.xcassets in Resources */,
+				8000AF611C6BAC5F003B955E /* Interface.storyboard in Resources */,
+				8000AF801C6BAE3A003B955E /* Digital.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8000AF671C6BAC5F003B955E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8000AF861C6BC51C003B955E /* clock737.jpg in Resources */,
+				8000AF731C6BAC5F003B955E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8046FB4D1C6653C0009BDD38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802233261C66765E00326C8B /* clock737.jpg in Resources */,
+				8046FB581C6653C0009BDD38 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E1DC1E1C5CB499002F5A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E1DC3A1C5CC417002F5A75 /* clock737.jpg in Resources */,
+				80E1DC2E1C5CB499002F5A75 /* LaunchScreen.storyboard in Resources */,
+				80C878B31C6090E1005C5369 /* timezonesDB.json in Resources */,
+				80E1DC2B1C5CB499002F5A75 /* Assets.xcassets in Resources */,
+				80E1DC291C5CB499002F5A75 /* Main.storyboard in Resources */,
+				8050BDB41C690CCC00575135 /* Digital.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8000AF651C6BAC5F003B955E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8000AFDE1C6F0CF7003B955E /* ByzantineModel.swift in Sources */,
+				8000AF851C6BC4DB003B955E /* EDSunriseSet.m in Sources */,
+				8000AF711C6BAC5F003B955E /* ExtensionDelegate.swift in Sources */,
+				8000AFE01C6F0D4A003B955E /* LocationSaver.swift in Sources */,
+				8000AF6F1C6BAC5F003B955E /* InterfaceController.swift in Sources */,
+				8000AF8C1C6BC8AF003B955E /* ClockDrawer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8046FB4B1C6653C0009BDD38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808CA3E81C665E4C004AAC0A /* EDSunriseSet.m in Sources */,
+				8046FB621C665420009BDD38 /* ByzantineModel.swift in Sources */,
+				8046FB631C665427009BDD38 /* ClockView.swift in Sources */,
+				8046FB611C665419009BDD38 /* LocationSaver.swift in Sources */,
+				8046FB551C6653C0009BDD38 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E1DC1C1C5CB499002F5A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C878A91C5E1011005C5369 /* SearchViewController.swift in Sources */,
+				808CA3E41C665B3D004AAC0A /* EDSunriseSet.m in Sources */,
+				8046FB471C64702E009BDD38 /* ClockView.swift in Sources */,
+				80E1DC3E1C5CEDF9002F5A75 /* LocationSaver.swift in Sources */,
+				8046FB491C663707009BDD38 /* ByzantineModel.swift in Sources */,
+				80E1DC361C5CC1EA002F5A75 /* LocationViewController.swift in Sources */,
+				80E1DC261C5CB499002F5A75 /* ViewController.swift in Sources */,
+				80E1DC241C5CB499002F5A75 /* AppDelegate.swift in Sources */,
+				80C878BB1C609D3A005C5369 /* CLLocation+APTimeZones.m in Sources */,
+				80C878BC1C609D3A005C5369 /* CLPlacemark+APTimeZones.m in Sources */,
+				80C878B11C6090E1005C5369 /* APTimeZones.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8000AF6C1C6BAC5F003B955E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8000AF681C6BAC5F003B955E /* Byzantine Clock Apple Watch Extension */;
+			targetProxy = 8000AF6B1C6BAC5F003B955E /* PBXContainerItemProxy */;
+		};
+		8000AF761C6BAC5F003B955E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8000AF5C1C6BAC5F003B955E /* Byzantine Clock Apple Watch */;
+			targetProxy = 8000AF751C6BAC5F003B955E /* PBXContainerItemProxy */;
+		};
+		8046FB5B1C6653C0009BDD38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8046FB4E1C6653C0009BDD38 /* TodayExtension */;
+			targetProxy = 8046FB5A1C6653C0009BDD38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8000AF5F1C6BAC5F003B955E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8000AF601C6BAC5F003B955E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		8046FB561C6653C0009BDD38 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8046FB571C6653C0009BDD38 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		80E1DC271C5CB499002F5A75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E1DC281C5CB499002F5A75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80E1DC2C1C5CB499002F5A75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E1DC2D1C5CB499002F5A75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8000AF781C6BAC5F003B955E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconWatch;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Byzantine_Clock_Apple_Watch_Extension;
+				INFOPLIST_FILE = "Byzantine Clock Apple Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tretiakovy.ByzantineClock.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		8000AF791C6BAC5F003B955E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconWatch;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Byzantine_Clock_Apple_Watch_Extension;
+				INFOPLIST_FILE = "Byzantine Clock Apple Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tretiakovy.ByzantineClock.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		8000AF7A1C6BAC5F003B955E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Byzantine Clock Apple Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tretiakovy.ByzantineClock.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ByzantineClock/ByzantineClock-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		8000AF7B1C6BAC5F003B955E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Byzantine Clock Apple Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tretiakovy.ByzantineClock.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ByzantineClock/ByzantineClock-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		8046FB5E1C6653C0009BDD38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tretiakovy.ByzantineClock.TodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ByzantineClock/ByzantineClock-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		8046FB5F1C6653C0009BDD38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tretiakovy.ByzantineClock.TodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ByzantineClock/ByzantineClock-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		80E1DC301C5CB499002F5A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80E1DC311C5CB499002F5A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80E1DC331C5CB499002F5A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ByzantineClock/ByzantineClock.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = ByzantineClock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tretiakovy.ByzantineClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ByzantineClock/ByzantineClock-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80E1DC341C5CB499002F5A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ByzantineClock/ByzantineClock.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = ByzantineClock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tretiakovy.ByzantineClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ByzantineClock/ByzantineClock-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8000AF7C1C6BAC5F003B955E /* Build configuration list for PBXNativeTarget "Byzantine Clock Apple Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8000AF7A1C6BAC5F003B955E /* Debug */,
+				8000AF7B1C6BAC5F003B955E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8000AF7E1C6BAC5F003B955E /* Build configuration list for PBXNativeTarget "Byzantine Clock Apple Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8000AF781C6BAC5F003B955E /* Debug */,
+				8000AF791C6BAC5F003B955E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8046FB5D1C6653C0009BDD38 /* Build configuration list for PBXNativeTarget "TodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8046FB5E1C6653C0009BDD38 /* Debug */,
+				8046FB5F1C6653C0009BDD38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E1DC1B1C5CB499002F5A75 /* Build configuration list for PBXProject "ByzantineClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E1DC301C5CB499002F5A75 /* Debug */,
+				80E1DC311C5CB499002F5A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E1DC321C5CB499002F5A75 /* Build configuration list for PBXNativeTarget "ByzantineClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E1DC331C5CB499002F5A75 /* Debug */,
+				80E1DC341C5CB499002F5A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80E1DC181C5CB499002F5A75 /* Project object */;
+}
